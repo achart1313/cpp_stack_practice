@@ -2,10 +2,13 @@
 #include <string>
 #include <sstream>
 
+#include "side.h"
+
 using namespace std;
 
 int main()
 {
+    helloWorld();
     int x = 0;
     string str;
     cout << "enter a number\n";
