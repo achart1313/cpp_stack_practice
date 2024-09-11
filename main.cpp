@@ -2,7 +2,7 @@
 #include <string>
 #include <sstream>
 
-#include "side.h"
+#include "stack.h"
 
 using namespace std;
 
@@ -11,6 +11,10 @@ int main()
     helloWorld();
     int x = 0;
     string str;
+    Stack s;
+    s.add(5);
+    s.peek();
+    s.pop();
     cout << "enter a number\n";
     getline(cin, str);
     if(isdigit(str.front())){

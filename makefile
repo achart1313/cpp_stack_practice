@@ -1,5 +1,5 @@
 main:
-	g++ main.cpp side.cpp -o main.exe
+	g++ main.cpp stack.cpp -o main.exe
 
 clean:
 	del main.exe
