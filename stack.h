@@ -2,6 +2,8 @@
 #define _stack
 void helloWorld(void);
 
+//stack currently can hold only integers
+//if I get around to it I'll probably update it to hold generic data
 typedef struct _Node{
     int payload;
     struct _Node * next;
@@ -10,6 +12,8 @@ typedef struct _Node{
 class Stack{
         Node* head;
     public:
+        Stack();
+        ~Stack();
         int peek();
         int pop();
         void add(int toAdd);

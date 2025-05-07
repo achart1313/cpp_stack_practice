@@ -12,9 +12,11 @@ int main()
     int x = 0;
     string str;
     Stack s;
+    cout << "peek:" << s.peek() << "\n";
     s.add(5);
-    s.peek();
+    cout << "peek:" << s.peek() << "\n";
     s.pop();
+    cout << "peek:" << s.peek() << "\n";
     cout << "enter a number\n";
     getline(cin, str);
     if(isdigit(str.front())){
