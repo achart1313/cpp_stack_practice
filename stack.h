@@ -16,6 +16,7 @@ class Stack{
         ~Stack();
         int peek();
         int pop();
-        void add(int toAdd);
+        void push(int toPush);
+        void printStack();
 };
 #endif

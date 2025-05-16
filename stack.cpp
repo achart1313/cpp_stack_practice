@@ -43,10 +43,20 @@ int Stack::pop(){
     return ret;
 }
 
-void Stack::add(int toAdd){
+void Stack::push(int toPush){
     Node* n = new Node;
     n->next = head;
-    n->payload = toAdd;
+    n->payload = toPush;
     head = n;
     return;
+}
+
+//an iterator might be more professional than this cheap method
+//but it should work for this small program
+void Stack::printStack(){
+    Node* n = head;
+    while(n != NULL){
+        cout << n->payload << "\n";
+        n = n->next;
+    }
 }
